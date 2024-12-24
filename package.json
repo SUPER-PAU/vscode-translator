@@ -1,0 +1,25 @@
+{
+    "name": "vscode-translator",
+    "displayName": "VS Code Translator",
+    "description": "A simple translator for VS Code using Node.js",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.80.0"
+    },
+    "activationEvents": ["onCommand:translator.translateWord"],
+    "main": "./extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "translator.translateWord",
+                "title": "Translate Word"
+            }
+        ]
+    },
+    "dependencies": {
+        "@vitalets/google-translate-api": "^8.0.0"
+    },
+    "devDependencies": {
+        "vscode": "^1.1.37"
+    }
+}
